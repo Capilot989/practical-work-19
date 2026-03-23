@@ -30,3 +30,21 @@ class NotSleeping:
                to fall asleep.
         """
         self.count_sheeps += 1
+
+    def lost(self) -> None:
+        """
+        Reset the sheep count to zero.
+
+        This method represents losing count of the sheep and starting over.
+        """
+
+        self.count_sheeps = 0
+
+    def get_count_sheeps(self) -> int:
+        """
+        Get the current number of sheep counted.
+
+        Returns:
+            The current sheep count
+        """
+        return self.count_sheeps
